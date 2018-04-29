@@ -1,0 +1,17 @@
+.landing-page {
+  height: 100%;
+  text-align: center;
+}
+
+.intro-content {
+  max-width: 75%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.gamekeeper {
+  display: inline-block;
+  width: 50%;
+  height: 400px;
+  line-height: 400px;
+}

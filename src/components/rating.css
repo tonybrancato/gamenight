@@ -1,0 +1,12 @@
+.die {
+  height: 30px;
+  width: 30px;
+  margin: 1px;
+  display: inline-block;
+  cursor: pointer;
+  opacity: .3;
+}
+
+.die-select {
+  opacity: 1;
+}
