@@ -1,20 +1,10 @@
 import React from 'react';
 import './landingpage.css';
 import { Link } from 'react-router-dom';
-// import {fieldPropTypes} from 'redux-form';
-import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
-
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: '#80e27e'
-    },
-  },
-});
 
 export default function LandingPage() {
   return (
-    <MuiThemeProvider theme={theme}>
+
       <div className="landing-page">
 
         {/* Info box containing explanation */}
@@ -48,6 +38,5 @@ export default function LandingPage() {
         {/* Footer with portfolio, github, and LinkedIn links */}
 
       </div>
-    </MuiThemeProvider>
   );
 }

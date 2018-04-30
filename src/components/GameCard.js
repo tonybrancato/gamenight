@@ -2,6 +2,9 @@ import React from 'react';
 import './gamecard.css';
 import Rating from './rating';
 import GameModal from './game-modal';
+import Card, { CardActions, CardContent } from 'material-ui/Card';
+import Button from 'material-ui/Button';
+import Typography from 'material-ui/Typography';
 
 // pass props 
 export default class GameCard extends React.Component {
@@ -11,24 +14,27 @@ export default class GameCard extends React.Component {
     // console.log('name', name, 'type',type,'players',players)
     return (
       <div className="game-card">
-      <div className="game-text">
-        <h1 className="game-title">{name}</h1>
-        <h2>{type}</h2>
-        <h3>{players} players</h3>
-      </div>
-        <Rating 
-          img1={require('../imgs/dice-six-faces-one.svg')}
-          img2={require('../imgs/dice-six-faces-two.svg')}
-          img3={require('../imgs/dice-six-faces-three.svg')}
-          img4={require('../imgs/dice-six-faces-four.svg')}
-          img5={require('../imgs/dice-six-faces-five.svg')}
-          img6={require('../imgs/dice-six-faces-six.svg')}
-        />
-        <GameModal 
-          name={name}
-          type={type}
-          players={players}
-        />
+      <Card>
+        <CardContent>
+          <Typography variant='headline' component='h2'>{name}</Typography>
+          <Typography>{players} player {type}</Typography>
+        </CardContent>
+        <CardActions>
+          <Rating 
+            img1={require('../imgs/dice-six-faces-one.svg')}
+            img2={require('../imgs/dice-six-faces-two.svg')}
+            img3={require('../imgs/dice-six-faces-three.svg')}
+            img4={require('../imgs/dice-six-faces-four.svg')}
+            img5={require('../imgs/dice-six-faces-five.svg')}
+            img6={require('../imgs/dice-six-faces-six.svg')}
+          />
+          <GameModal 
+            name={name}
+            type={type}
+            players={players}
+          />
+        </CardActions>
+        </Card>
       </div>
     )
   }
