@@ -14,15 +14,6 @@ export default class GameChart extends React.Component {
           legend_toggle
           options={{title:"My Daily Activities", pieHole: 0.3, is3D: false}}
         />
-        {/* <Chart
-          chartType="ScatterChart"
-          data={[['Age', 'Weight'], [8, 12], [4, 5.5]]}
-          options={{}}
-          graph_id="ScatterChart"
-          width="100%"
-          height="400px"
-          legend_toggle
-        /> */}
       </div>
     )
   }
